@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
 const RSSParser = require('rss-parser');
-// New Dependencies for fetching and parsing the article webpage
+
 const axios = require('axios');
 const cheerio = require('cheerio'); 
 
@@ -26,7 +26,7 @@ const FEEDS = [
         name: "Lab",
         url: "https://weber-cyber-club.github.io/labs/index.xml",
         channelId: "1443647723038572566",
-        color: '#492365', // Green color
+        color: '#492365', 
         tag: '@Labs_Role',
         footerText: 'New Lab Available!',
         baseUrl: 'https://weber-cyber-club.github.io', // Base URL for resolving relative image paths
@@ -38,7 +38,7 @@ const FEEDS = [
         color: '#492365', 
         tag: '@Challenge_Role',
         footerText: 'New Challenge Launched!',
-        baseUrl: 'https://weber-cyber-club.github.io', // Base URL for resolving relative image paths
+        baseUrl: 'https://weber-cyber-club.github.io',
     },
     {
         name: "Cyber News",
